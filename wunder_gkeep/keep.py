@@ -55,9 +55,3 @@ class Keep():
             glist.add(task['title'], False)
 
         self._keep.sync()
-
-
-#create_test()
-#find()
-# get()
-#create_list()
