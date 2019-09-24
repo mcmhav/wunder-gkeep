@@ -6,6 +6,12 @@ from wunder_gkeep.wunderlist import Wunderlist
 
 
 def wunder_to_keep(request=None):
+    request_json = request.get_json(silent=True)
+    request_args = request.args
+
+    print(request_json)
+    print(request_args)
+
     wunderlist = Wunderlist()
     tasks = wunderlist.get_tasks()
 
