@@ -1,34 +1,34 @@
 [[package]]
-category = "main"
-description = "Python package for providing Mozilla's CA Bundle."
 name = "certifi"
-optional = false
-python-versions = "*"
 version = "2019.9.11"
-
-[[package]]
+description = "Python package for providing Mozilla's CA Bundle."
 category = "main"
-description = "Universal encoding detector for Python 2 and 3"
-name = "chardet"
 optional = false
 python-versions = "*"
-version = "3.0.4"
 
 [[package]]
+name = "chardet"
+version = "3.0.4"
+description = "Universal encoding detector for Python 2 and 3"
 category = "main"
-description = "Clean single-source support for Python 3 and 2"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "future"
+version = "0.17.1"
+description = "Clean single-source support for Python 3 and 2"
+category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-version = "0.17.1"
 
 [[package]]
-category = "main"
-description = "An unofficial Google Keep API client"
 name = "gkeepapi"
+version = "0.11.7"
+description = "An unofficial Google Keep API client"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.11.7"
 
 [package.dependencies]
 future = ">=0.16.0"
@@ -36,48 +36,48 @@ gpsoauth = ">=0.4.1"
 six = ">=1.11.0"
 
 [[package]]
-category = "main"
-description = "A python client library for Google Play Services OAuth."
 name = "gpsoauth"
+version = "0.4.1"
+description = "A python client library for Google Play Services OAuth."
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.4.1"
 
 [package.dependencies]
 pycryptodomex = ">=3.0"
 requests = "*"
 
 [[package]]
-category = "main"
-description = "Internationalized Domain Names in Applications (IDNA)"
 name = "idna"
+version = "2.8"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "2.8"
 
 [[package]]
-category = "main"
-description = "Cryptographic library for Python"
 name = "pycryptodomex"
+version = "3.9.0"
+description = "Cryptographic library for Python"
+category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "3.9.0"
 
 [[package]]
-category = "dev"
-description = "YAML parser and emitter for Python"
 name = "pyyaml"
+version = "5.1.2"
+description = "YAML parser and emitter for Python"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "5.1.2"
 
 [[package]]
-category = "main"
-description = "Python HTTP for Humans."
 name = "requests"
+version = "2.22.0"
+description = "Python HTTP for Humans."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "2.22.0"
 
 [package.dependencies]
 certifi = ">=2017.4.17"
@@ -85,35 +85,112 @@ chardet = ">=3.0.2,<3.1.0"
 idna = ">=2.5,<2.9"
 urllib3 = ">=1.21.1,<1.25.0 || >1.25.0,<1.25.1 || >1.25.1,<1.26"
 
+[package.extras]
+security = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)"]
+socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
+
 [[package]]
-category = "main"
-description = "Python 2 and 3 compatibility utilities"
 name = "six"
+version = "1.12.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*"
-version = "1.12.0"
 
 [[package]]
-category = "main"
-description = "HTTP library with thread-safe connection pooling, file post, and more."
 name = "urllib3"
+version = "1.25.8"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4"
-version = "1.25.5"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
+
+[package.extras]
+brotli = ["brotlipy (>=0.6.0)"]
+secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "ipaddress"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [metadata]
-content-hash = "6d85e659fbff2a51acb935b4e58e1c1be38d700cd5452461ece189c7d645b025"
+lock-version = "1.1"
 python-versions = "^3.7"
+content-hash = "6d85e659fbff2a51acb935b4e58e1c1be38d700cd5452461ece189c7d645b025"
 
-[metadata.hashes]
-certifi = ["e4f3620cfea4f83eedc95b24abd9cd56f3c4b146dd0177e83a21b4eb49e21e50", "fd7c7c74727ddcf00e9acd26bba8da604ffec95bf1c2144e67aff7a8b50e6cef"]
-chardet = ["84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae", "fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"]
-future = ["67045236dcfd6816dc439556d009594abf643e5eb48992e36beac09c2ca659b8"]
-gkeepapi = ["fb40d6c38b510e9c656f914c647986913caf6cab6a17a4eebd54267f40faa765"]
-gpsoauth = ["1c3f45824d45ac3d06b9d9a0c0eccafe1052505d31ac9a698aef8b00fb0dfc37"]
-idna = ["c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407", "ea8b7f6188e6fa117537c3df7da9fc686d485087abf6ac197f9c46432f7e4a3c"]
-pycryptodomex = ["020928b2831b2047288c9143f41c6690eb669d60761c7ca8c5ca743a2c51517c", "0ce1950ba6544eca4d6fd7386e2502d4bd871fcbd5e5b977604f48ea37b29fc6", "0d5b1159a24a56fd3359b7b1aa1e4331c394033eababb2972bb923d6767968db", "11453e8628cdccbcb08e04405298d659c0c0458cf9bf23eaaa3c201f8d635389", "22e050089f60e70b97909fe62612ee9589f0be1c928c2aa637f2534eddf61632", "27317f1e8e496a2f208b1c40da425d5fe760b494f95c847bb7c3074c95a8edcb", "32e2fe1d0c5fada45b22b647f88367b210dfea40a5cc849b142b4e9fa497c488", "3a998b390a80fd0d22c7d9fbaf49a9a11772ef90495a8baecdea2e6d09929937", "46dda35fbed5426794ab64d483d6257dc43f52e78ba934563492df7cb89f7de6", "4846ca0f2363bdb934c556667b056331d4aabd48f20924b0c5583a49d764d3fc", "550f5e6f07b091f986023f871fa8a2bde9875ccae51d4bd07b31fa9855fe994f", "561905b459de41c3ad19912cdcd88c8e24295d01e97b7b2a63d4188c8e4e0dbc", "5745ca86a4e88a775b7cace28b947a86661d5cc09ecc1c8d97293a7d20c1bb79", "5c2a3bb28dde992f97d856937e973dda0462bf3acb7d0009308a81159a35323b", "73a8acc8ff7f09d482e481757d92a250f803e66e0f248019df90a69e61840180", "8601613ebc329b853e466f581ad1156638989926e0dcdf52952542a89883836c", "8b604f4fa1de456d6d19771b01c2823675a75a2c60e51a6b738f71fdfe865370", "96f8622cb8061f4aca95e52cc835659f024bc2e237ee6a9d01117873b7490b98", "a01c99532c5f7ab96274b5c9f3e135315b79b55ba5c8233fc4d029e0369e94df", "c63040e0313e27b62b0f4295f41adecf96cde7ff4d49f653b81b1958cb1180bf", "c812cb9f3af63da8eaa251e7e48f8b38c4e40974d2bdae2f0ca7a7a12549727a", "cb9e8ef672b7a961f90e0a497718e0f052f76324f216840a4ec30248e4d19f20", "ce8edda46374c344de87089f9887ad4dd317bb4a22f91f1844202eaf14b08de0", "de58de0d5f2fb9253707ee718e1378f2194fdd394cdbed1b6464ab44642f5217", "e0100f9b93d0119d846a33e6cb5001ee208519b81c6acf76da614b71de75885b", "e530b77bdff5c2bf3065e6a088e1602ad193b43e285bac196d4b8820308ec6bb", "f048069aa7b530f1c5e84d55c2b28ca7a7272bb3b8d28829d454a94bec6529a8", "f6a9271c842e93c349b6007676a62d03dca712c9f4dff66c3270d50504ca9014"]
-pyyaml = ["0113bc0ec2ad727182326b61326afa3d1d8280ae1122493553fd6f4397f33df9", "01adf0b6c6f61bd11af6e10ca52b7d4057dd0be0343eb9283c878cf3af56aee4", "5124373960b0b3f4aa7df1707e63e9f109b5263eca5976c66e08b1c552d4eaf8", "5ca4f10adbddae56d824b2c09668e91219bb178a1eee1faa56af6f99f11bf696", "7907be34ffa3c5a32b60b95f4d95ea25361c951383a894fec31be7252b2b6f34", "7ec9b2a4ed5cad025c2278a1e6a19c011c80a3caaac804fd2d329e9cc2c287c9", "87ae4c829bb25b9fe99cf71fbb2140c448f534e24c998cc60f39ae4f94396a73", "9de9919becc9cc2ff03637872a440195ac4241c80536632fffeb6a1e25a74299", "a5a85b10e450c66b49f98846937e8cfca1db3127a9d5d1e31ca45c3d0bef4c5b", "b0997827b4f6a7c286c01c5f60384d218dca4ed7d9efa945c3e1aa623d5709ae", "b631ef96d3222e62861443cc89d6563ba3eeb816eeb96b2629345ab795e53681", "bf47c0607522fdbca6c9e817a6e81b08491de50f3766a7a0e6a5be7905961b41", "f81025eddd0327c7d4cfe9b62cf33190e1e736cc6e97502b3ec425f574b3e7a8"]
-requests = ["11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4", "9cf5292fcd0f598c671cfc1e0d7d1a7f13bb8085e9a590f48c010551dc6c4b31"]
-six = ["3350809f0555b11f552448330d0b52d5f24c91a322ea4a15ef22629740f3761c", "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"]
-urllib3 = ["2f3eadfea5d92bc7899e75b5968410b749a054b492d5a6379c1344a1481bc2cb", "9c6c593cb28f52075016307fc26b0a0f8e82bc7d1ff19aaaa959b91710a56c47"]
+[metadata.files]
+certifi = [
+    {file = "certifi-2019.9.11-py2.py3-none-any.whl", hash = "sha256:fd7c7c74727ddcf00e9acd26bba8da604ffec95bf1c2144e67aff7a8b50e6cef"},
+    {file = "certifi-2019.9.11.tar.gz", hash = "sha256:e4f3620cfea4f83eedc95b24abd9cd56f3c4b146dd0177e83a21b4eb49e21e50"},
+]
+chardet = [
+    {file = "chardet-3.0.4-py2.py3-none-any.whl", hash = "sha256:fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"},
+    {file = "chardet-3.0.4.tar.gz", hash = "sha256:84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"},
+]
+future = [
+    {file = "future-0.17.1.tar.gz", hash = "sha256:67045236dcfd6816dc439556d009594abf643e5eb48992e36beac09c2ca659b8"},
+]
+gkeepapi = [
+    {file = "gkeepapi-0.11.7-py2.py3-none-any.whl", hash = "sha256:fb40d6c38b510e9c656f914c647986913caf6cab6a17a4eebd54267f40faa765"},
+]
+gpsoauth = [
+    {file = "gpsoauth-0.4.1.tar.gz", hash = "sha256:1c3f45824d45ac3d06b9d9a0c0eccafe1052505d31ac9a698aef8b00fb0dfc37"},
+]
+idna = [
+    {file = "idna-2.8-py2.py3-none-any.whl", hash = "sha256:ea8b7f6188e6fa117537c3df7da9fc686d485087abf6ac197f9c46432f7e4a3c"},
+    {file = "idna-2.8.tar.gz", hash = "sha256:c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407"},
+]
+pycryptodomex = [
+    {file = "pycryptodomex-3.9.0-cp27-cp27m-macosx_10_6_intel.whl", hash = "sha256:5c2a3bb28dde992f97d856937e973dda0462bf3acb7d0009308a81159a35323b"},
+    {file = "pycryptodomex-3.9.0-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:de58de0d5f2fb9253707ee718e1378f2194fdd394cdbed1b6464ab44642f5217"},
+    {file = "pycryptodomex-3.9.0-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:96f8622cb8061f4aca95e52cc835659f024bc2e237ee6a9d01117873b7490b98"},
+    {file = "pycryptodomex-3.9.0-cp27-cp27m-win32.whl", hash = "sha256:020928b2831b2047288c9143f41c6690eb669d60761c7ca8c5ca743a2c51517c"},
+    {file = "pycryptodomex-3.9.0-cp27-cp27m-win_amd64.whl", hash = "sha256:46dda35fbed5426794ab64d483d6257dc43f52e78ba934563492df7cb89f7de6"},
+    {file = "pycryptodomex-3.9.0-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:32e2fe1d0c5fada45b22b647f88367b210dfea40a5cc849b142b4e9fa497c488"},
+    {file = "pycryptodomex-3.9.0-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:e0100f9b93d0119d846a33e6cb5001ee208519b81c6acf76da614b71de75885b"},
+    {file = "pycryptodomex-3.9.0-cp34-cp34m-macosx_10_6_intel.whl", hash = "sha256:f6a9271c842e93c349b6007676a62d03dca712c9f4dff66c3270d50504ca9014"},
+    {file = "pycryptodomex-3.9.0-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:c812cb9f3af63da8eaa251e7e48f8b38c4e40974d2bdae2f0ca7a7a12549727a"},
+    {file = "pycryptodomex-3.9.0-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:0ce1950ba6544eca4d6fd7386e2502d4bd871fcbd5e5b977604f48ea37b29fc6"},
+    {file = "pycryptodomex-3.9.0-cp34-cp34m-win32.whl", hash = "sha256:550f5e6f07b091f986023f871fa8a2bde9875ccae51d4bd07b31fa9855fe994f"},
+    {file = "pycryptodomex-3.9.0-cp34-cp34m-win_amd64.whl", hash = "sha256:8601613ebc329b853e466f581ad1156638989926e0dcdf52952542a89883836c"},
+    {file = "pycryptodomex-3.9.0-cp35-cp35m-macosx_10_6_intel.whl", hash = "sha256:ce8edda46374c344de87089f9887ad4dd317bb4a22f91f1844202eaf14b08de0"},
+    {file = "pycryptodomex-3.9.0-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:a01c99532c5f7ab96274b5c9f3e135315b79b55ba5c8233fc4d029e0369e94df"},
+    {file = "pycryptodomex-3.9.0-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:3a998b390a80fd0d22c7d9fbaf49a9a11772ef90495a8baecdea2e6d09929937"},
+    {file = "pycryptodomex-3.9.0-cp35-cp35m-win32.whl", hash = "sha256:e530b77bdff5c2bf3065e6a088e1602ad193b43e285bac196d4b8820308ec6bb"},
+    {file = "pycryptodomex-3.9.0-cp35-cp35m-win_amd64.whl", hash = "sha256:22e050089f60e70b97909fe62612ee9589f0be1c928c2aa637f2534eddf61632"},
+    {file = "pycryptodomex-3.9.0-cp36-cp36m-macosx_10_6_intel.whl", hash = "sha256:561905b459de41c3ad19912cdcd88c8e24295d01e97b7b2a63d4188c8e4e0dbc"},
+    {file = "pycryptodomex-3.9.0-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:73a8acc8ff7f09d482e481757d92a250f803e66e0f248019df90a69e61840180"},
+    {file = "pycryptodomex-3.9.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:5745ca86a4e88a775b7cace28b947a86661d5cc09ecc1c8d97293a7d20c1bb79"},
+    {file = "pycryptodomex-3.9.0-cp36-cp36m-win32.whl", hash = "sha256:f048069aa7b530f1c5e84d55c2b28ca7a7272bb3b8d28829d454a94bec6529a8"},
+    {file = "pycryptodomex-3.9.0-cp36-cp36m-win_amd64.whl", hash = "sha256:c63040e0313e27b62b0f4295f41adecf96cde7ff4d49f653b81b1958cb1180bf"},
+    {file = "pycryptodomex-3.9.0-cp37-cp37m-macosx_10_6_intel.whl", hash = "sha256:27317f1e8e496a2f208b1c40da425d5fe760b494f95c847bb7c3074c95a8edcb"},
+    {file = "pycryptodomex-3.9.0-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:11453e8628cdccbcb08e04405298d659c0c0458cf9bf23eaaa3c201f8d635389"},
+    {file = "pycryptodomex-3.9.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:0d5b1159a24a56fd3359b7b1aa1e4331c394033eababb2972bb923d6767968db"},
+    {file = "pycryptodomex-3.9.0-cp37-cp37m-win32.whl", hash = "sha256:4846ca0f2363bdb934c556667b056331d4aabd48f20924b0c5583a49d764d3fc"},
+    {file = "pycryptodomex-3.9.0-cp37-cp37m-win_amd64.whl", hash = "sha256:cb9e8ef672b7a961f90e0a497718e0f052f76324f216840a4ec30248e4d19f20"},
+    {file = "pycryptodomex-3.9.0.tar.gz", hash = "sha256:8b604f4fa1de456d6d19771b01c2823675a75a2c60e51a6b738f71fdfe865370"},
+]
+pyyaml = [
+    {file = "PyYAML-5.1.2-cp27-cp27m-win32.whl", hash = "sha256:5124373960b0b3f4aa7df1707e63e9f109b5263eca5976c66e08b1c552d4eaf8"},
+    {file = "PyYAML-5.1.2-cp27-cp27m-win_amd64.whl", hash = "sha256:f81025eddd0327c7d4cfe9b62cf33190e1e736cc6e97502b3ec425f574b3e7a8"},
+    {file = "PyYAML-5.1.2-cp34-cp34m-win32.whl", hash = "sha256:0113bc0ec2ad727182326b61326afa3d1d8280ae1122493553fd6f4397f33df9"},
+    {file = "PyYAML-5.1.2-cp34-cp34m-win_amd64.whl", hash = "sha256:5ca4f10adbddae56d824b2c09668e91219bb178a1eee1faa56af6f99f11bf696"},
+    {file = "PyYAML-5.1.2-cp35-cp35m-win32.whl", hash = "sha256:bf47c0607522fdbca6c9e817a6e81b08491de50f3766a7a0e6a5be7905961b41"},
+    {file = "PyYAML-5.1.2-cp35-cp35m-win_amd64.whl", hash = "sha256:87ae4c829bb25b9fe99cf71fbb2140c448f534e24c998cc60f39ae4f94396a73"},
+    {file = "PyYAML-5.1.2-cp36-cp36m-win32.whl", hash = "sha256:9de9919becc9cc2ff03637872a440195ac4241c80536632fffeb6a1e25a74299"},
+    {file = "PyYAML-5.1.2-cp36-cp36m-win_amd64.whl", hash = "sha256:a5a85b10e450c66b49f98846937e8cfca1db3127a9d5d1e31ca45c3d0bef4c5b"},
+    {file = "PyYAML-5.1.2-cp37-cp37m-win32.whl", hash = "sha256:b0997827b4f6a7c286c01c5f60384d218dca4ed7d9efa945c3e1aa623d5709ae"},
+    {file = "PyYAML-5.1.2-cp37-cp37m-win_amd64.whl", hash = "sha256:7907be34ffa3c5a32b60b95f4d95ea25361c951383a894fec31be7252b2b6f34"},
+    {file = "PyYAML-5.1.2-cp38-cp38m-win32.whl", hash = "sha256:7ec9b2a4ed5cad025c2278a1e6a19c011c80a3caaac804fd2d329e9cc2c287c9"},
+    {file = "PyYAML-5.1.2-cp38-cp38m-win_amd64.whl", hash = "sha256:b631ef96d3222e62861443cc89d6563ba3eeb816eeb96b2629345ab795e53681"},
+    {file = "PyYAML-5.1.2.tar.gz", hash = "sha256:01adf0b6c6f61bd11af6e10ca52b7d4057dd0be0343eb9283c878cf3af56aee4"},
+]
+requests = [
+    {file = "requests-2.22.0-py2.py3-none-any.whl", hash = "sha256:9cf5292fcd0f598c671cfc1e0d7d1a7f13bb8085e9a590f48c010551dc6c4b31"},
+    {file = "requests-2.22.0.tar.gz", hash = "sha256:11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4"},
+]
+six = [
+    {file = "six-1.12.0-py2.py3-none-any.whl", hash = "sha256:3350809f0555b11f552448330d0b52d5f24c91a322ea4a15ef22629740f3761c"},
+    {file = "six-1.12.0.tar.gz", hash = "sha256:d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"},
+]
+urllib3 = [
+    {file = "urllib3-1.25.8-py2.py3-none-any.whl", hash = "sha256:2f3db8b19923a873b3e5256dc9c2dedfa883e33d87c690d9c7913e1f40673cdc"},
+    {file = "urllib3-1.25.8.tar.gz", hash = "sha256:87716c2d2a7121198ebcb7ce7cccf6ce5e9ba539041cfbaeecfb641dc0bf6acc"},
+]
